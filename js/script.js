@@ -1,7 +1,9 @@
 const textElem = document.getElementById('text');
 const buttonElem = document.getElementById('button');
 
-buttonElem.textContent = textElem.value;
+textElem.addEventListener('input', () => {
+    buttonElem.textContent = textElem.value;
+})
 
 
 
